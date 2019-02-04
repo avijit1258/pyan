@@ -1,0 +1,74 @@
+digraph G {
+    graph [rankdir=TB, clusterrank="local"];
+    subgraph cluster_G {
+
+        graph [style="filled,rounded",fillcolor="#80808018", label=""];
+        detectron__ops__collect_and_distribute_fpn_rpn_proposals [label="detectron.ops.collect_and_distribute_fpn_rpn_proposals", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="0"];
+        detectron__ops__generate_proposal_labels [label="detectron.ops.generate_proposal_labels", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="1"];
+        detectron__ops__generate_proposals [label="detectron.ops.generate_proposals", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="2"];
+        subgraph cluster_detectron__ops__collect_and_distribute_fpn_rpn_proposals {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.collect_and_distribute_fpn_rpn_proposals"];
+            detectron__ops__collect_and_distribute_fpn_rpn_proposals__CollectAndDistributeFpnRpnProposalsOp [label="CollectAndDistributeFpnRpnProposalsOp\n(/home/avijit/github/Detectron/detectron/ops/collect_and_distribute_fpn_rpn_proposals.py:31)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__ops__collect_and_distribute_fpn_rpn_proposals {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.collect_and_distribute_fpn_rpn_proposals"];
+            detectron__ops__collect_and_distribute_fpn_rpn_proposals__collect [label="collect\n(/home/avijit/github/Detectron/detectron/ops/collect_and_distribute_fpn_rpn_proposals.py:71)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__ops__collect_and_distribute_fpn_rpn_proposals {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.collect_and_distribute_fpn_rpn_proposals"];
+            detectron__ops__collect_and_distribute_fpn_rpn_proposals__distribute [label="distribute\n(/home/avijit/github/Detectron/detectron/ops/collect_and_distribute_fpn_rpn_proposals.py:91)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__ops__collect_and_distribute_fpn_rpn_proposals__CollectAndDistributeFpnRpnProposalsOp {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.collect_and_distribute_fpn_rpn_proposals.CollectAndDistributeFpnRpnProposalsOp"];
+            detectron__ops__collect_and_distribute_fpn_rpn_proposals__CollectAndDistributeFpnRpnProposalsOp____init__ [label="__init__\n(/home/avijit/github/Detectron/detectron/ops/collect_and_distribute_fpn_rpn_proposals.py:32)", style="filled", fillcolor="#ff3232b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__ops__collect_and_distribute_fpn_rpn_proposals__CollectAndDistributeFpnRpnProposalsOp {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.collect_and_distribute_fpn_rpn_proposals.CollectAndDistributeFpnRpnProposalsOp"];
+            detectron__ops__collect_and_distribute_fpn_rpn_proposals__CollectAndDistributeFpnRpnProposalsOp__forward [label="forward\n(/home/avijit/github/Detectron/detectron/ops/collect_and_distribute_fpn_rpn_proposals.py:35)", style="filled", fillcolor="#ff3232b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__ops__generate_proposal_labels {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.generate_proposal_labels"];
+            detectron__ops__generate_proposal_labels__GenerateProposalLabelsOp [label="GenerateProposalLabelsOp\n(/home/avijit/github/Detectron/detectron/ops/generate_proposal_labels.py:31)", style="filled", fillcolor="#b2ff65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__ops__generate_proposal_labels__GenerateProposalLabelsOp {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.generate_proposal_labels.GenerateProposalLabelsOp"];
+            detectron__ops__generate_proposal_labels__GenerateProposalLabelsOp__forward [label="forward\n(/home/avijit/github/Detectron/detectron/ops/generate_proposal_labels.py:33)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__ops__generate_proposals {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.generate_proposals"];
+            detectron__ops__generate_proposals__GenerateProposalsOp [label="GenerateProposalsOp\n(/home/avijit/github/Detectron/detectron/ops/generate_proposals.py:30)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__ops__generate_proposals {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.generate_proposals"];
+            detectron__ops__generate_proposals___filter_boxes [label="_filter_boxes\n(/home/avijit/github/Detectron/detectron/ops/generate_proposals.py:174)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__ops__generate_proposals__GenerateProposalsOp {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.generate_proposals.GenerateProposalsOp"];
+            detectron__ops__generate_proposals__GenerateProposalsOp____init__ [label="__init__\n(/home/avijit/github/Detectron/detectron/ops/generate_proposals.py:38)", style="filled", fillcolor="#32feffb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__ops__generate_proposals__GenerateProposalsOp {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.generate_proposals.GenerateProposalsOp"];
+            detectron__ops__generate_proposals__GenerateProposalsOp__forward [label="forward\n(/home/avijit/github/Detectron/detectron/ops/generate_proposals.py:45)", style="filled", fillcolor="#32feffb2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__ops__generate_proposals__GenerateProposalsOp {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.ops.generate_proposals.GenerateProposalsOp"];
+            detectron__ops__generate_proposals__GenerateProposalsOp__proposals_for_one_image [label="proposals_for_one_image\n(/home/avijit/github/Detectron/detectron/ops/generate_proposals.py:110)", style="filled", fillcolor="#32feffb2", fontcolor="#000000", group="2"];
+        }
+    }
+        detectron__ops__collect_and_distribute_fpn_rpn_proposals__CollectAndDistributeFpnRpnProposalsOp__forward -> detectron__ops__collect_and_distribute_fpn_rpn_proposals__collect [style="solid", color="#000000"];
+        detectron__ops__collect_and_distribute_fpn_rpn_proposals__CollectAndDistributeFpnRpnProposalsOp__forward -> detectron__ops__collect_and_distribute_fpn_rpn_proposals__distribute [style="solid", color="#000000"];
+        detectron__ops__generate_proposals__GenerateProposalsOp__forward -> detectron__ops__generate_proposals__GenerateProposalsOp__proposals_for_one_image [style="solid", color="#000000"];
+        detectron__ops__generate_proposals__GenerateProposalsOp__proposals_for_one_image -> detectron__ops__generate_proposals___filter_boxes [style="solid", color="#000000"];
+    }

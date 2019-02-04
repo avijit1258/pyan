@@ -1,0 +1,488 @@
+digraph G {
+    graph [rankdir=TB, clusterrank="local"];
+    subgraph cluster_G {
+
+        graph [style="filled,rounded",fillcolor="#80808018", label=""];
+        detectron__datasets__cityscapes_json_dataset_evaluator [label="detectron.datasets.cityscapes_json_dataset_evaluator", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="0"];
+        detectron__datasets__coco_to_cityscapes_id [label="detectron.datasets.coco_to_cityscapes_id", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="1"];
+        detectron__datasets__dataset_catalog [label="detectron.datasets.dataset_catalog", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="2"];
+        detectron__datasets__dummy_datasets [label="detectron.datasets.dummy_datasets", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="3"];
+        detectron__datasets__json_dataset [label="detectron.datasets.json_dataset", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="4"];
+        detectron__datasets__json_dataset_evaluator [label="detectron.datasets.json_dataset_evaluator", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="5"];
+        detectron__datasets__roidb [label="detectron.datasets.roidb", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="6"];
+        detectron__datasets__task_evaluation [label="detectron.datasets.task_evaluation", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="7"];
+        detectron__datasets__voc_dataset_evaluator [label="detectron.datasets.voc_dataset_evaluator", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="8"];
+        detectron__datasets__voc_eval [label="detectron.datasets.voc_eval", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="9"];
+        subgraph cluster_detectron__datasets__cityscapes_json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.cityscapes_json_dataset_evaluator"];
+            detectron__datasets__cityscapes_json_dataset_evaluator__evaluate_masks [label="evaluate_masks\n(/home/avijit/github/Detectron/detectron/datasets/cityscapes_json_dataset_evaluator.py:36)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__datasets__coco_to_cityscapes_id {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.coco_to_cityscapes_id"];
+            detectron__datasets__coco_to_cityscapes_id__cityscapes_to_coco [label="cityscapes_to_coco\n(/home/avijit/github/Detectron/detectron/datasets/coco_to_cityscapes_id.py:38)", style="filled", fillcolor="#ffb965b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__datasets__coco_to_cityscapes_id {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.coco_to_cityscapes_id"];
+            detectron__datasets__coco_to_cityscapes_id__cityscapes_to_coco_all_random [label="cityscapes_to_coco_all_random\n(/home/avijit/github/Detectron/detectron/datasets/coco_to_cityscapes_id.py:83)", style="filled", fillcolor="#ffb965b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__datasets__coco_to_cityscapes_id {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.coco_to_cityscapes_id"];
+            detectron__datasets__coco_to_cityscapes_id__cityscapes_to_coco_with_rider [label="cityscapes_to_coco_with_rider\n(/home/avijit/github/Detectron/detectron/datasets/coco_to_cityscapes_id.py:53)", style="filled", fillcolor="#ffb965b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__datasets__coco_to_cityscapes_id {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.coco_to_cityscapes_id"];
+            detectron__datasets__coco_to_cityscapes_id__cityscapes_to_coco_without_person_rider [label="cityscapes_to_coco_without_person_rider\n(/home/avijit/github/Detectron/detectron/datasets/coco_to_cityscapes_id.py:68)", style="filled", fillcolor="#ffb965b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__datasets__dataset_catalog {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.dataset_catalog"];
+            detectron__datasets__dataset_catalog__contains [label="contains\n(/home/avijit/github/Detectron/detectron/datasets/dataset_catalog.py:213)", style="filled", fillcolor="#f1ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__datasets__dataset_catalog {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.dataset_catalog"];
+            detectron__datasets__dataset_catalog__datasets [label="datasets\n(/home/avijit/github/Detectron/detectron/datasets/dataset_catalog.py:208)", style="filled", fillcolor="#f1ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__datasets__dataset_catalog {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.dataset_catalog"];
+            detectron__datasets__dataset_catalog__get_ann_fn [label="get_ann_fn\n(/home/avijit/github/Detectron/detectron/datasets/dataset_catalog.py:223)", style="filled", fillcolor="#f1ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__datasets__dataset_catalog {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.dataset_catalog"];
+            detectron__datasets__dataset_catalog__get_devkit_dir [label="get_devkit_dir\n(/home/avijit/github/Detectron/detectron/datasets/dataset_catalog.py:233)", style="filled", fillcolor="#f1ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__datasets__dataset_catalog {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.dataset_catalog"];
+            detectron__datasets__dataset_catalog__get_im_dir [label="get_im_dir\n(/home/avijit/github/Detectron/detectron/datasets/dataset_catalog.py:218)", style="filled", fillcolor="#f1ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__datasets__dataset_catalog {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.dataset_catalog"];
+            detectron__datasets__dataset_catalog__get_im_prefix [label="get_im_prefix\n(/home/avijit/github/Detectron/detectron/datasets/dataset_catalog.py:228)", style="filled", fillcolor="#f1ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__datasets__dataset_catalog {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.dataset_catalog"];
+            detectron__datasets__dataset_catalog__get_raw_dir [label="get_raw_dir\n(/home/avijit/github/Detectron/detectron/datasets/dataset_catalog.py:238)", style="filled", fillcolor="#f1ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__datasets__dummy_datasets {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.dummy_datasets"];
+            detectron__datasets__dummy_datasets__get_coco_dataset [label="get_coco_dataset\n(/home/avijit/github/Detectron/detectron/datasets/dummy_datasets.py:28)", style="filled", fillcolor="#9dff65b2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset"];
+            detectron__datasets__json_dataset__JsonDataset [label="JsonDataset\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:51)", style="filled", fillcolor="#65ff81b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset"];
+            detectron__datasets__json_dataset___add_class_assignments [label="_add_class_assignments\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:429)", style="filled", fillcolor="#65ff81b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset"];
+            detectron__datasets__json_dataset___filter_crowd_proposals [label="_filter_crowd_proposals\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:409)", style="filled", fillcolor="#65ff81b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset"];
+            detectron__datasets__json_dataset___merge_proposal_boxes_into_roidb [label="_merge_proposal_boxes_into_roidb\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:345)", style="filled", fillcolor="#65ff81b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset"];
+            detectron__datasets__json_dataset___sort_proposals [label="_sort_proposals\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:450)", style="filled", fillcolor="#65ff81b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset"];
+            detectron__datasets__json_dataset__add_proposals [label="add_proposals\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:329)", style="filled", fillcolor="#65ff81b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset__JsonDataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset.JsonDataset"];
+            detectron__datasets__json_dataset__JsonDataset____init__ [label="__init__\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:54)", style="filled", fillcolor="#32ff58b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset__JsonDataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset.JsonDataset"];
+            detectron__datasets__json_dataset__JsonDataset___add_gt_annotations [label="_add_gt_annotations\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:161)", style="filled", fillcolor="#32ff58b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset__JsonDataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset.JsonDataset"];
+            detectron__datasets__json_dataset__JsonDataset___add_proposals_from_file [label="_add_proposals_from_file\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:249)", style="filled", fillcolor="#32ff58b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset__JsonDataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset.JsonDataset"];
+            detectron__datasets__json_dataset__JsonDataset___get_gt_keypoints [label="_get_gt_keypoints\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:309)", style="filled", fillcolor="#32ff58b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset__JsonDataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset.JsonDataset"];
+            detectron__datasets__json_dataset__JsonDataset___init_keypoints [label="_init_keypoints\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:280)", style="filled", fillcolor="#32ff58b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset__JsonDataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset.JsonDataset"];
+            detectron__datasets__json_dataset__JsonDataset___prep_roidb_entry [label="_prep_roidb_entry\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:128)", style="filled", fillcolor="#32ff58b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset__JsonDataset {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset.JsonDataset"];
+            detectron__datasets__json_dataset__JsonDataset__get_roidb [label="get_roidb\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset.py:83)", style="filled", fillcolor="#32ff58b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator___coco_bbox_results_one_category [label="_coco_bbox_results_one_category\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:186)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator___coco_kp_results_one_category [label="_coco_kp_results_one_category\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:392)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator___coco_segms_results_one_category [label="_coco_segms_results_one_category\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:103)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator___do_detection_eval [label="_do_detection_eval\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:210)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator___do_keypoint_eval [label="_do_keypoint_eval\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:440)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator___do_segmentation_eval [label="_do_segmentation_eval\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:129)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator___log_detection_eval_metrics [label="_log_detection_eval_metrics\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:222)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator___write_coco_bbox_results_file [label="_write_coco_bbox_results_file\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:166)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator___write_coco_keypoint_results_file [label="_write_coco_keypoint_results_file\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:370)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator___write_coco_segms_results_file [label="_write_coco_segms_results_file\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:70)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator__evaluate_box_proposals [label="evaluate_box_proposals\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:255)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator__evaluate_boxes [label="evaluate_boxes\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:141)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator__evaluate_keypoints [label="evaluate_keypoints\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:339)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator"];
+            detectron__datasets__json_dataset_evaluator__evaluate_masks [label="evaluate_masks\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:39)", style="filled", fillcolor="#65ffd5b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__json_dataset_evaluator___log_detection_eval_metrics {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.json_dataset_evaluator._log_detection_eval_metrics"];
+            detectron__datasets__json_dataset_evaluator___log_detection_eval_metrics___get_thr_ind [label="_get_thr_ind\n(/home/avijit/github/Detectron/detectron/datasets/json_dataset_evaluator.py:223)", style="filled", fillcolor="#32ffc7b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__datasets__roidb {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.roidb"];
+            detectron__datasets__roidb___compute_and_log_stats [label="_compute_and_log_stats\n(/home/avijit/github/Detectron/detectron/datasets/roidb.py:179)", style="filled", fillcolor="#65d5ffb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__datasets__roidb {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.roidb"];
+            detectron__datasets__roidb__add_bbox_regression_targets [label="add_bbox_regression_targets\n(/home/avijit/github/Detectron/detectron/datasets/roidb.py:139)", style="filled", fillcolor="#65d5ffb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__datasets__roidb {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.roidb"];
+            detectron__datasets__roidb__combined_roidb_for_training [label="combined_roidb_for_training\n(/home/avijit/github/Detectron/detectron/datasets/roidb.py:36)", style="filled", fillcolor="#65d5ffb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__datasets__roidb {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.roidb"];
+            detectron__datasets__roidb__compute_bbox_regression_targets [label="compute_bbox_regression_targets\n(/home/avijit/github/Detectron/detectron/datasets/roidb.py:145)", style="filled", fillcolor="#65d5ffb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__datasets__roidb {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.roidb"];
+            detectron__datasets__roidb__extend_with_flipped_entries [label="extend_with_flipped_entries\n(/home/avijit/github/Detectron/detectron/datasets/roidb.py:76)", style="filled", fillcolor="#65d5ffb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__datasets__roidb {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.roidb"];
+            detectron__datasets__roidb__filter_for_training [label="filter_for_training\n(/home/avijit/github/Detectron/detectron/datasets/roidb.py:111)", style="filled", fillcolor="#65d5ffb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__datasets__roidb__combined_roidb_for_training {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.roidb.combined_roidb_for_training"];
+            detectron__datasets__roidb__combined_roidb_for_training__get_roidb [label="get_roidb\n(/home/avijit/github/Detectron/detectron/datasets/roidb.py:41)", style="filled", fillcolor="#32c7ffb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__datasets__roidb__filter_for_training {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.roidb.filter_for_training"];
+            detectron__datasets__roidb__filter_for_training__is_valid [label="is_valid\n(/home/avijit/github/Detectron/detectron/datasets/roidb.py:114)", style="filled", fillcolor="#32c7ffb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___coco_eval_to_box_results [label="_coco_eval_to_box_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:297)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___coco_eval_to_keypoint_results [label="_coco_eval_to_keypoint_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:323)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___coco_eval_to_mask_results [label="_coco_eval_to_mask_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:310)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___cs_eval_to_mask_results [label="_cs_eval_to_mask_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:340)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___empty_box_proposal_results [label="_empty_box_proposal_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:392)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___empty_box_results [label="_empty_box_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:345)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___empty_keypoint_results [label="_empty_keypoint_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:377)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___empty_mask_results [label="_empty_mask_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:361)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___use_cityscapes_evaluator [label="_use_cityscapes_evaluator\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:271)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___use_json_dataset_evaluator [label="_use_json_dataset_evaluator\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:266)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___use_voc_evaluator [label="_use_voc_evaluator\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:276)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation___voc_eval_to_box_results [label="_voc_eval_to_box_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:335)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation__check_expected_results [label="check_expected_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:190)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation__evaluate_all [label="evaluate_all\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:53)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation__evaluate_box_proposals [label="evaluate_box_proposals\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:152)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation__evaluate_boxes [label="evaluate_boxes\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:74)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation__evaluate_keypoints [label="evaluate_keypoints\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:134)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation__evaluate_masks [label="evaluate_masks\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:103)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation__log_box_proposal_results [label="log_box_proposal_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:166)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__task_evaluation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.task_evaluation"];
+            detectron__datasets__task_evaluation__log_copy_paste_friendly_results [label="log_copy_paste_friendly_results\n(/home/avijit/github/Detectron/detectron/datasets/task_evaluation.py:176)", style="filled", fillcolor="#6581ffb2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__datasets__voc_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.voc_dataset_evaluator"];
+            detectron__datasets__voc_dataset_evaluator___do_matlab_eval [label="_do_matlab_eval\n(/home/avijit/github/Detectron/detectron/datasets/voc_dataset_evaluator.py:145)", style="filled", fillcolor="#9d65ffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__datasets__voc_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.voc_dataset_evaluator"];
+            detectron__datasets__voc_dataset_evaluator___do_python_eval [label="_do_python_eval\n(/home/avijit/github/Detectron/detectron/datasets/voc_dataset_evaluator.py:104)", style="filled", fillcolor="#9d65ffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__datasets__voc_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.voc_dataset_evaluator"];
+            detectron__datasets__voc_dataset_evaluator___get_voc_results_file_template [label="_get_voc_results_file_template\n(/home/avijit/github/Detectron/detectron/datasets/voc_dataset_evaluator.py:94)", style="filled", fillcolor="#9d65ffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__datasets__voc_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.voc_dataset_evaluator"];
+            detectron__datasets__voc_dataset_evaluator___write_voc_results_files [label="_write_voc_results_files\n(/home/avijit/github/Detectron/detectron/datasets/voc_dataset_evaluator.py:57)", style="filled", fillcolor="#9d65ffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__datasets__voc_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.voc_dataset_evaluator"];
+            detectron__datasets__voc_dataset_evaluator__evaluate_boxes [label="evaluate_boxes\n(/home/avijit/github/Detectron/detectron/datasets/voc_dataset_evaluator.py:37)", style="filled", fillcolor="#9d65ffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__datasets__voc_dataset_evaluator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.voc_dataset_evaluator"];
+            detectron__datasets__voc_dataset_evaluator__voc_info [label="voc_info\n(/home/avijit/github/Detectron/detectron/datasets/voc_dataset_evaluator.py:163)", style="filled", fillcolor="#9d65ffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__datasets__voc_eval {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.voc_eval"];
+            detectron__datasets__voc_eval__parse_rec [label="parse_rec\n(/home/avijit/github/Detectron/detectron/datasets/voc_eval.py:36)", style="filled", fillcolor="#f165ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__datasets__voc_eval {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.voc_eval"];
+            detectron__datasets__voc_eval__voc_ap [label="voc_ap\n(/home/avijit/github/Detectron/detectron/datasets/voc_eval.py:56)", style="filled", fillcolor="#f165ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__datasets__voc_eval {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.datasets.voc_eval"];
+            detectron__datasets__voc_eval__voc_eval [label="voc_eval\n(/home/avijit/github/Detectron/detectron/datasets/voc_eval.py:88)", style="filled", fillcolor="#f165ffb2", fontcolor="#000000", group="9"];
+        }
+    }
+        detectron__datasets__cityscapes_json_dataset_evaluator -> detectron__datasets__dataset_catalog [style="solid", color="#000000"];
+        detectron__datasets__cityscapes_json_dataset_evaluator__evaluate_masks -> detectron__datasets__dataset_catalog__get_raw_dir [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator__evaluate_masks -> detectron__datasets__json_dataset_evaluator___write_coco_segms_results_file [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator__evaluate_masks -> detectron__datasets__json_dataset_evaluator___do_segmentation_eval [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator___write_coco_segms_results_file -> detectron__datasets__json_dataset_evaluator___coco_segms_results_one_category [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator___do_segmentation_eval -> detectron__datasets__json_dataset_evaluator___log_detection_eval_metrics [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator__evaluate_boxes -> detectron__datasets__json_dataset_evaluator___write_coco_bbox_results_file [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator__evaluate_boxes -> detectron__datasets__json_dataset_evaluator___do_detection_eval [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator___write_coco_bbox_results_file -> detectron__datasets__json_dataset_evaluator___coco_bbox_results_one_category [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator___do_detection_eval -> detectron__datasets__json_dataset_evaluator___log_detection_eval_metrics [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator___log_detection_eval_metrics -> detectron__datasets__json_dataset_evaluator___log_detection_eval_metrics___get_thr_ind [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator__evaluate_keypoints -> detectron__datasets__json_dataset_evaluator___do_keypoint_eval [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator__evaluate_keypoints -> detectron__datasets__json_dataset_evaluator___write_coco_keypoint_results_file [style="solid", color="#000000"];
+        detectron__datasets__json_dataset_evaluator___write_coco_keypoint_results_file -> detectron__datasets__json_dataset_evaluator___coco_kp_results_one_category [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset____init__ -> detectron__datasets__json_dataset__JsonDataset___init_keypoints [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset____init__ -> detectron__datasets__dataset_catalog__get_im_prefix [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset____init__ -> detectron__datasets__dataset_catalog__contains [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset____init__ -> detectron__datasets__dataset_catalog__get_im_dir [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset____init__ -> detectron__datasets__dataset_catalog__get_ann_fn [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset__get_roidb -> detectron__datasets__json_dataset__JsonDataset___prep_roidb_entry [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset__get_roidb -> detectron__datasets__json_dataset__JsonDataset___add_proposals_from_file [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset__get_roidb -> detectron__datasets__json_dataset__JsonDataset___add_gt_annotations [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset__get_roidb -> detectron__datasets__json_dataset___add_class_assignments [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset___prep_roidb_entry -> detectron__datasets__dataset_catalog__get_im_dir [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset___prep_roidb_entry -> detectron__datasets__dataset_catalog__get_im_prefix [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset___add_gt_annotations -> detectron__datasets__json_dataset__JsonDataset___get_gt_keypoints [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset___add_proposals_from_file -> detectron__datasets__json_dataset___merge_proposal_boxes_into_roidb [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset___add_proposals_from_file -> detectron__datasets__json_dataset___filter_crowd_proposals [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__JsonDataset___add_proposals_from_file -> detectron__datasets__json_dataset___sort_proposals [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__add_proposals -> detectron__datasets__json_dataset___merge_proposal_boxes_into_roidb [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__add_proposals -> detectron__datasets__json_dataset___filter_crowd_proposals [style="solid", color="#000000"];
+        detectron__datasets__json_dataset__add_proposals -> detectron__datasets__json_dataset___add_class_assignments [style="solid", color="#000000"];
+        detectron__datasets__roidb -> detectron__datasets__json_dataset [style="solid", color="#000000"];
+        detectron__datasets__roidb__combined_roidb_for_training__get_roidb -> detectron__datasets__json_dataset__JsonDataset [style="solid", color="#000000"];
+        detectron__datasets__roidb__combined_roidb_for_training__get_roidb -> detectron__datasets__json_dataset__JsonDataset____init__ [style="solid", color="#000000"];
+        detectron__datasets__roidb__combined_roidb_for_training__get_roidb -> detectron__datasets__roidb__extend_with_flipped_entries [style="solid", color="#000000"];
+        detectron__datasets__roidb__combined_roidb_for_training__get_roidb -> detectron__datasets__json_dataset__JsonDataset__get_roidb [style="solid", color="#000000"];
+        detectron__datasets__roidb__combined_roidb_for_training -> detectron__datasets__roidb___compute_and_log_stats [style="solid", color="#000000"];
+        detectron__datasets__roidb__combined_roidb_for_training -> detectron__datasets__roidb__combined_roidb_for_training__get_roidb [style="solid", color="#000000"];
+        detectron__datasets__roidb__combined_roidb_for_training -> detectron__datasets__roidb__add_bbox_regression_targets [style="solid", color="#000000"];
+        detectron__datasets__roidb__combined_roidb_for_training -> detectron__datasets__roidb__filter_for_training [style="solid", color="#000000"];
+        detectron__datasets__roidb__filter_for_training -> detectron__datasets__roidb__filter_for_training__is_valid [style="solid", color="#000000"];
+        detectron__datasets__roidb__add_bbox_regression_targets -> detectron__datasets__roidb__compute_bbox_regression_targets [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_all -> detectron__datasets__task_evaluation__evaluate_boxes [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_all -> detectron__datasets__task_evaluation__evaluate_keypoints [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_all -> detectron__datasets__task_evaluation__evaluate_masks [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_boxes -> detectron__datasets__json_dataset_evaluator__evaluate_boxes [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_boxes -> detectron__datasets__task_evaluation___voc_eval_to_box_results [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_boxes -> detectron__datasets__task_evaluation___use_json_dataset_evaluator [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_boxes -> detectron__datasets__task_evaluation___use_cityscapes_evaluator [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_boxes -> detectron__datasets__task_evaluation___use_voc_evaluator [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_boxes -> detectron__datasets__voc_dataset_evaluator__evaluate_boxes [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_boxes -> detectron__datasets__task_evaluation___coco_eval_to_box_results [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_masks -> detectron__datasets__task_evaluation___coco_eval_to_mask_results [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_masks -> detectron__datasets__json_dataset_evaluator__evaluate_masks [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_masks -> detectron__datasets__task_evaluation___use_json_dataset_evaluator [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_masks -> detectron__datasets__task_evaluation___cs_eval_to_mask_results [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_masks -> detectron__datasets__task_evaluation___use_cityscapes_evaluator [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_masks -> detectron__datasets__cityscapes_json_dataset_evaluator__evaluate_masks [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_keypoints -> detectron__datasets__json_dataset_evaluator__evaluate_keypoints [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_keypoints -> detectron__datasets__task_evaluation___coco_eval_to_keypoint_results [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_box_proposals -> detectron__datasets__task_evaluation___empty_box_proposal_results [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation__evaluate_box_proposals -> detectron__datasets__json_dataset_evaluator__evaluate_box_proposals [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation___coco_eval_to_box_results -> detectron__datasets__task_evaluation___empty_box_results [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation___coco_eval_to_mask_results -> detectron__datasets__task_evaluation___empty_mask_results [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation___coco_eval_to_keypoint_results -> detectron__datasets__task_evaluation___empty_keypoint_results [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation___voc_eval_to_box_results -> detectron__datasets__task_evaluation___empty_box_results [style="solid", color="#000000"];
+        detectron__datasets__task_evaluation___cs_eval_to_mask_results -> detectron__datasets__task_evaluation___empty_mask_results [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator -> detectron__datasets__voc_eval [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator -> detectron__datasets__dataset_catalog [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator__evaluate_boxes -> detectron__datasets__voc_dataset_evaluator___write_voc_results_files [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator__evaluate_boxes -> detectron__datasets__voc_dataset_evaluator___do_python_eval [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator__evaluate_boxes -> detectron__datasets__voc_dataset_evaluator___do_matlab_eval [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator___write_voc_results_files -> detectron__datasets__voc_dataset_evaluator__voc_info [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator___get_voc_results_file_template -> detectron__datasets__voc_dataset_evaluator__voc_info [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator___do_python_eval -> detectron__datasets__voc_eval__voc_eval [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator___do_python_eval -> detectron__datasets__voc_dataset_evaluator__voc_info [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator___do_matlab_eval -> detectron__datasets__voc_dataset_evaluator__voc_info [style="solid", color="#000000"];
+        detectron__datasets__voc_dataset_evaluator__voc_info -> detectron__datasets__dataset_catalog__get_devkit_dir [style="solid", color="#000000"];
+        detectron__datasets__voc_eval__voc_eval -> detectron__datasets__voc_eval__parse_rec [style="solid", color="#000000"];
+        detectron__datasets__voc_eval__voc_eval -> detectron__datasets__voc_eval__voc_ap [style="solid", color="#000000"];
+    }

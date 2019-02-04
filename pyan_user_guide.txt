@@ -1,0 +1,7 @@
+Command for generating svg image from dot file using graphviz
+
+dot -Tsvg architecture.dot >architecture.svg
+
+For generating dot file from a python program
+
+python pyan.py /home/avijit/github/Detectron/detectron/*.py --uses --no-defines --colored --grouped --annotated --dot >detectron.dot
