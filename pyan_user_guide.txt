@@ -5,3 +5,7 @@ dot -Tsvg architecture.dot >architecture.svg
 For generating dot file from a python program
 
 python pyan.py /home/avijit/github/Detectron/detectron/*.py --uses --no-defines --colored --grouped --annotated --dot >detectron.dot
+
+This command generates adjacent matrix TGF means trivial graph format
+
+python pyan.py /home/avijit/github/pyan/pyan/*.py --uses --no-defines --colored --grouped --annotated  -f graph.txt --uses --no-defines --tgf
