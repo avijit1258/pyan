@@ -9,3 +9,11 @@ python pyan.py /home/avijit/github/Detectron/detectron/*.py --uses --no-defines 
 This command generates adjacent matrix TGF means trivial graph format
 
 python pyan.py /home/avijit/github/pyan/pyan/*.py --uses --no-defines --colored --grouped --annotated  -f graph.txt --uses --no-defines --tgf
+
+
+
+python3 pyan.py /home/avijit/PycharmProjects/Detectron/detectron/**/*.py --uses --no-defines --colored --grouped --annotated  -f graph.txt --uses --no-defines --tgf
+
+/home/avijit/PycharmProjects/Detectron/detectron/**/*.py
+
+Edited glob function call with recursive = True and above line change in directory to work with nested higherarchical file extraction

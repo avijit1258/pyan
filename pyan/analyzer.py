@@ -50,6 +50,7 @@ class CallGraphVisitor(ast.NodeVisitor):
         for filename in filenames:
             mod_name = get_module_name(filename)
             short_name = mod_name.rsplit('.', 1)[-1]
+            #print(mod_name, short_name)
             self.module_names[short_name] = mod_name
             self.module_to_filename[mod_name] = filename
         self.filenames = filenames
