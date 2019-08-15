@@ -1,0 +1,425 @@
+digraph G {
+    graph [rankdir=TB, clusterrank="local"];
+    subgraph cluster_G {
+
+        graph [style="filled,rounded",fillcolor="#80808018", label=""];
+        detectron__core__config [label="detectron.core.config", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="0"];
+        detectron__core__rpn_generator [label="detectron.core.rpn_generator", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="1"];
+        detectron__core__test [label="detectron.core.test", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="2"];
+        detectron__core__test_engine [label="detectron.core.test_engine", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="3"];
+        detectron__core__test_retinanet [label="detectron.core.test_retinanet", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="4"];
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config___check_and_coerce_cfg_value_type [label="_check_and_coerce_cfg_value_type\n(/home/avijit/github/Detectron/detectron/core/config.py:1261)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config___decode_cfg_value [label="_decode_cfg_value\n(/home/avijit/github/Detectron/detectron/core/config.py:1228)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config___key_is_deprecated [label="_key_is_deprecated\n(/home/avijit/github/Detectron/detectron/core/config.py:1202)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config___key_is_renamed [label="_key_is_renamed\n(/home/avijit/github/Detectron/detectron/core/config.py:1211)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config___merge_a_into_b [label="_merge_a_into_b\n(/home/avijit/github/Detectron/detectron/core/config.py:1167)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config___raise_key_rename_error [label="_raise_key_rename_error\n(/home/avijit/github/Detectron/detectron/core/config.py:1215)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config__assert_and_infer_cfg [label="assert_and_infer_cfg\n(/home/avijit/github/Detectron/detectron/core/config.py:1068)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config__cache_cfg_urls [label="cache_cfg_urls\n(/home/avijit/github/Detectron/detectron/core/config.py:1086)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config__get_output_dir [label="get_output_dir\n(/home/avijit/github/Detectron/detectron/core/config.py:1100)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config__load_cfg [label="load_cfg\n(/home/avijit/github/Detectron/detectron/core/config.py:1114)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config__merge_cfg_from_cfg [label="merge_cfg_from_cfg\n(/home/avijit/github/Detectron/detectron/core/config.py:1138)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config__merge_cfg_from_file [label="merge_cfg_from_file\n(/home/avijit/github/Detectron/detectron/core/config.py:1131)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__config {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.config"];
+            detectron__core__config__merge_cfg_from_list [label="merge_cfg_from_list\n(/home/avijit/github/Detectron/detectron/core/config.py:1143)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__core__rpn_generator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.rpn_generator"];
+            detectron__core__rpn_generator__evaluate_proposal_file [label="evaluate_proposal_file\n(/home/avijit/github/Detectron/detectron/core/rpn_generator.py:272)", style="filled", fillcolor="#feff65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__core__rpn_generator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.rpn_generator"];
+            detectron__core__rpn_generator__generate_proposals_on_roidb [label="generate_proposals_on_roidb\n(/home/avijit/github/Detectron/detectron/core/rpn_generator.py:170)", style="filled", fillcolor="#feff65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__core__rpn_generator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.rpn_generator"];
+            detectron__core__rpn_generator__generate_rpn_on_dataset [label="generate_rpn_on_dataset\n(/home/avijit/github/Detectron/detectron/core/rpn_generator.py:55)", style="filled", fillcolor="#feff65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__core__rpn_generator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.rpn_generator"];
+            detectron__core__rpn_generator__generate_rpn_on_range [label="generate_rpn_on_range\n(/home/avijit/github/Detectron/detectron/core/rpn_generator.py:121)", style="filled", fillcolor="#feff65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__core__rpn_generator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.rpn_generator"];
+            detectron__core__rpn_generator__get_roidb [label="get_roidb\n(/home/avijit/github/Detectron/detectron/core/rpn_generator.py:253)", style="filled", fillcolor="#feff65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__core__rpn_generator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.rpn_generator"];
+            detectron__core__rpn_generator__im_proposals [label="im_proposals\n(/home/avijit/github/Detectron/detectron/core/rpn_generator.py:208)", style="filled", fillcolor="#feff65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__core__rpn_generator {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.rpn_generator"];
+            detectron__core__rpn_generator__multi_gpu_generate_rpn_on_dataset [label="multi_gpu_generate_rpn_on_dataset\n(/home/avijit/github/Detectron/detectron/core/rpn_generator.py:87)", style="filled", fillcolor="#feff65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test___add_multilevel_rois_for_test [label="_add_multilevel_rois_for_test\n(/home/avijit/github/Detectron/detectron/core/test.py:921)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test___get_blobs [label="_get_blobs\n(/home/avijit/github/Detectron/detectron/core/test.py:942)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test___get_rois_blob [label="_get_rois_blob\n(/home/avijit/github/Detectron/detectron/core/test.py:889)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test___project_im_rois [label="_project_im_rois\n(/home/avijit/github/Detectron/detectron/core/test.py:905)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__box_results_with_nms_and_limit [label="box_results_with_nms_and_limit\n(/home/avijit/github/Detectron/detectron/core/test.py:749)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__combine_heatmaps_size_dep [label="combine_heatmaps_size_dep\n(/home/avijit/github/Detectron/detectron/core/test.py:721)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_conv_body_only [label="im_conv_body_only\n(/home/avijit/github/Detectron/detectron/core/test.py:111)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_all [label="im_detect_all\n(/home/avijit/github/Detectron/detectron/core/test.py:52)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_bbox [label="im_detect_bbox\n(/home/avijit/github/Detectron/detectron/core/test.py:121)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_bbox_aspect_ratio [label="im_detect_bbox_aspect_ratio\n(/home/avijit/github/Detectron/detectron/core/test.py:336)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_bbox_aug [label="im_detect_bbox_aug\n(/home/avijit/github/Detectron/detectron/core/test.py:197)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_bbox_hflip [label="im_detect_bbox_hflip\n(/home/avijit/github/Detectron/detectron/core/test.py:294)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_bbox_scale [label="im_detect_bbox_scale\n(/home/avijit/github/Detectron/detectron/core/test.py:319)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_keypoints [label="im_detect_keypoints\n(/home/avijit/github/Detectron/detectron/core/test.py:540)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_keypoints_aspect_ratio [label="im_detect_keypoints_aspect_ratio\n(/home/avijit/github/Detectron/detectron/core/test.py:699)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_keypoints_aug [label="im_detect_keypoints_aug\n(/home/avijit/github/Detectron/detectron/core/test.py:581)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_keypoints_hflip [label="im_detect_keypoints_hflip\n(/home/avijit/github/Detectron/detectron/core/test.py:668)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_keypoints_scale [label="im_detect_keypoints_scale\n(/home/avijit/github/Detectron/detectron/core/test.py:685)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_mask [label="im_detect_mask\n(/home/avijit/github/Detectron/detectron/core/test.py:373)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_mask_aspect_ratio [label="im_detect_mask_aspect_ratio\n(/home/avijit/github/Detectron/detectron/core/test.py:520)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_mask_aug [label="im_detect_mask_aug\n(/home/avijit/github/Detectron/detectron/core/test.py:416)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_mask_hflip [label="im_detect_mask_hflip\n(/home/avijit/github/Detectron/detectron/core/test.py:489)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__im_detect_mask_scale [label="im_detect_mask_scale\n(/home/avijit/github/Detectron/detectron/core/test.py:506)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__keypoint_results [label="keypoint_results\n(/home/avijit/github/Detectron/detectron/core/test.py:870)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test"];
+            detectron__core__test__segm_results [label="segm_results\n(/home/avijit/github/Detectron/detectron/core/test.py:812)", style="filled", fillcolor="#65ff65b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test__im_detect_bbox_aug {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test.im_detect_bbox_aug"];
+            detectron__core__test__im_detect_bbox_aug__add_preds_t [label="add_preds_t\n(/home/avijit/github/Detectron/detectron/core/test.py:217)", style="filled", fillcolor="#32ff32b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test__im_detect_keypoints_aug {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test.im_detect_keypoints_aug"];
+            detectron__core__test__im_detect_keypoints_aug__add_heatmaps_t [label="add_heatmaps_t\n(/home/avijit/github/Detectron/detectron/core/test.py:599)", style="filled", fillcolor="#32ff32b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test__im_detect_keypoints_aug {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test.im_detect_keypoints_aug"];
+            detectron__core__test__im_detect_keypoints_aug__heur_f [label="heur_f\n(/home/avijit/github/Detectron/detectron/core/test.py:654)", style="filled", fillcolor="#32ff32b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test__im_detect_mask_aug {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test.im_detect_mask_aug"];
+            detectron__core__test__im_detect_mask_aug__logit [label="logit\n(/home/avijit/github/Detectron/detectron/core/test.py:475)", style="filled", fillcolor="#32ff32b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__core__test_engine {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine"];
+            detectron__core__test_engine__empty_results [label="empty_results\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:367)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_engine {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine"];
+            detectron__core__test_engine__extend_results [label="extend_results\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:389)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_engine {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine"];
+            detectron__core__test_engine__get_eval_functions [label="get_eval_functions\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:51)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_engine {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine"];
+            detectron__core__test_engine__get_inference_dataset [label="get_inference_dataset\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:65)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_engine {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine"];
+            detectron__core__test_engine__get_roidb_and_dataset [label="get_roidb_and_dataset\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:341)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_engine {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine"];
+            detectron__core__test_engine__initialize_model_from_cfg [label="initialize_model_from_cfg\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:323)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_engine {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine"];
+            detectron__core__test_engine__multi_gpu_test_net_on_dataset [label="multi_gpu_test_net_on_dataset\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:168)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_engine {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine"];
+            detectron__core__test_engine__run_inference [label="run_inference\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:84)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_engine {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine"];
+            detectron__core__test_engine__test_net [label="test_net\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:217)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_engine {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine"];
+            detectron__core__test_engine__test_net_on_dataset [label="test_net_on_dataset\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:139)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_engine__run_inference {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_engine.run_inference"];
+            detectron__core__test_engine__run_inference__result_getter [label="result_getter\n(/home/avijit/github/Detectron/detectron/core/test_engine.py:92)", style="filled", fillcolor="#32feffb2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__core__test_retinanet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_retinanet"];
+            detectron__core__test_retinanet___create_cell_anchors [label="_create_cell_anchors\n(/home/avijit/github/Detectron/detectron/core/test_retinanet.py:38)", style="filled", fillcolor="#6565ffb2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__core__test_retinanet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.core.test_retinanet"];
+            detectron__core__test_retinanet__im_detect_bbox [label="im_detect_bbox\n(/home/avijit/github/Detectron/detectron/core/test_retinanet.py:67)", style="filled", fillcolor="#6565ffb2", fontcolor="#000000", group="4"];
+        }
+    }
+        detectron__core__config__assert_and_infer_cfg -> detectron__core__config__cache_cfg_urls [style="solid", color="#000000"];
+        detectron__core__config__merge_cfg_from_file -> detectron__core__config___merge_a_into_b [style="solid", color="#000000"];
+        detectron__core__config__merge_cfg_from_file -> detectron__core__config__load_cfg [style="solid", color="#000000"];
+        detectron__core__config__merge_cfg_from_cfg -> detectron__core__config___merge_a_into_b [style="solid", color="#000000"];
+        detectron__core__config__merge_cfg_from_list -> detectron__core__config___check_and_coerce_cfg_value_type [style="solid", color="#000000"];
+        detectron__core__config__merge_cfg_from_list -> detectron__core__config___raise_key_rename_error [style="solid", color="#000000"];
+        detectron__core__config__merge_cfg_from_list -> detectron__core__config___key_is_renamed [style="solid", color="#000000"];
+        detectron__core__config__merge_cfg_from_list -> detectron__core__config___decode_cfg_value [style="solid", color="#000000"];
+        detectron__core__config__merge_cfg_from_list -> detectron__core__config___key_is_deprecated [style="solid", color="#000000"];
+        detectron__core__config___merge_a_into_b -> detectron__core__config___key_is_renamed [style="solid", color="#000000"];
+        detectron__core__config___merge_a_into_b -> detectron__core__config___raise_key_rename_error [style="solid", color="#000000"];
+        detectron__core__config___merge_a_into_b -> detectron__core__config___decode_cfg_value [style="solid", color="#000000"];
+        detectron__core__config___merge_a_into_b -> detectron__core__config___check_and_coerce_cfg_value_type [style="solid", color="#000000"];
+        detectron__core__config___merge_a_into_b -> detectron__core__config___merge_a_into_b [style="solid", color="#000000"];
+        detectron__core__config___merge_a_into_b -> detectron__core__config___key_is_deprecated [style="solid", color="#000000"];
+        detectron__core__rpn_generator -> detectron__core__config [style="solid", color="#000000"];
+        detectron__core__rpn_generator__generate_rpn_on_dataset -> detectron__core__rpn_generator__multi_gpu_generate_rpn_on_dataset [style="solid", color="#000000"];
+        detectron__core__rpn_generator__generate_rpn_on_dataset -> detectron__core__rpn_generator__generate_rpn_on_range [style="solid", color="#000000"];
+        detectron__core__rpn_generator__generate_rpn_on_dataset -> detectron__core__rpn_generator__evaluate_proposal_file [style="solid", color="#000000"];
+        detectron__core__rpn_generator__generate_rpn_on_range -> detectron__core__rpn_generator__get_roidb [style="solid", color="#000000"];
+        detectron__core__rpn_generator__generate_rpn_on_range -> detectron__core__rpn_generator__generate_proposals_on_roidb [style="solid", color="#000000"];
+        detectron__core__rpn_generator__generate_proposals_on_roidb -> detectron__core__rpn_generator__im_proposals [style="solid", color="#000000"];
+        detectron__core__test_engine -> detectron__core__test [style="solid", color="#000000"];
+        detectron__core__test_engine -> detectron__core__config [style="solid", color="#000000"];
+        detectron__core__test_engine -> detectron__core__rpn_generator [style="solid", color="#000000"];
+        detectron__core__test_engine__get_eval_functions -> detectron__core__test_engine__test_net [style="solid", color="#000000"];
+        detectron__core__test_engine__get_eval_functions -> detectron__core__rpn_generator__generate_rpn_on_range [style="solid", color="#000000"];
+        detectron__core__test_engine__get_eval_functions -> detectron__core__test_engine__test_net_on_dataset [style="solid", color="#000000"];
+        detectron__core__test_engine__get_eval_functions -> detectron__core__rpn_generator__generate_rpn_on_dataset [style="solid", color="#000000"];
+        detectron__core__test_engine__run_inference -> detectron__core__test_engine__get_eval_functions [style="solid", color="#000000"];
+        detectron__core__test_engine__run_inference -> detectron__core__test_engine__run_inference__result_getter [style="solid", color="#000000"];
+        detectron__core__test_engine__run_inference__result_getter -> detectron__core__test_engine__get_eval_functions [style="solid", color="#000000"];
+        detectron__core__test_engine__run_inference__result_getter -> detectron__core__test_engine__run_inference__result_getter [style="solid", color="#000000"];
+        detectron__core__test_engine__run_inference__result_getter -> detectron__core__test_engine__get_inference_dataset [style="solid", color="#000000"];
+        detectron__core__test_engine__run_inference__result_getter -> detectron__core__config__get_output_dir [style="solid", color="#000000"];
+        detectron__core__test_engine__test_net_on_dataset -> detectron__core__test_engine__test_net [style="solid", color="#000000"];
+        detectron__core__test_engine__test_net_on_dataset -> detectron__core__test_engine__multi_gpu_test_net_on_dataset [style="solid", color="#000000"];
+        detectron__core__test_engine__test_net -> detectron__core__test_engine__initialize_model_from_cfg [style="solid", color="#000000"];
+        detectron__core__test_engine__test_net -> detectron__core__test__im_detect_all [style="solid", color="#000000"];
+        detectron__core__test_engine__test_net -> detectron__core__test_engine__get_roidb_and_dataset [style="solid", color="#000000"];
+        detectron__core__test_engine__test_net -> detectron__core__test_engine__empty_results [style="solid", color="#000000"];
+        detectron__core__test_engine__test_net -> detectron__core__test_engine__extend_results [style="solid", color="#000000"];
+        detectron__core__test -> detectron__core__config [style="solid", color="#000000"];
+        detectron__core__test__im_detect_all -> detectron__core__test__im_detect_mask_aug [style="solid", color="#000000"];
+        detectron__core__test__im_detect_all -> detectron__core__test__keypoint_results [style="solid", color="#000000"];
+        detectron__core__test__im_detect_all -> detectron__core__test_retinanet__im_detect_bbox [style="solid", color="#000000"];
+        detectron__core__test__im_detect_all -> detectron__core__test__im_detect_bbox [style="solid", color="#000000"];
+        detectron__core__test__im_detect_all -> detectron__core__test__im_detect_bbox_aug [style="solid", color="#000000"];
+        detectron__core__test__im_detect_all -> detectron__core__test__im_detect_keypoints [style="solid", color="#000000"];
+        detectron__core__test__im_detect_all -> detectron__core__test__box_results_with_nms_and_limit [style="solid", color="#000000"];
+        detectron__core__test__im_detect_all -> detectron__core__test__segm_results [style="solid", color="#000000"];
+        detectron__core__test__im_detect_all -> detectron__core__test__im_detect_keypoints_aug [style="solid", color="#000000"];
+        detectron__core__test__im_detect_all -> detectron__core__test__im_detect_mask [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox -> detectron__core__test___add_multilevel_rois_for_test [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox -> detectron__core__test___get_blobs [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox_aug -> detectron__core__test__im_detect_bbox_aug__add_preds_t [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox_aug -> detectron__core__test__im_detect_bbox_hflip [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox_aug -> detectron__core__test__im_detect_bbox [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox_aug -> detectron__core__test__im_detect_bbox_scale [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox_aug -> detectron__core__test__im_detect_bbox_aspect_ratio [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox_hflip -> detectron__core__test__im_detect_bbox [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox_scale -> detectron__core__test__im_detect_bbox [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox_scale -> detectron__core__test__im_detect_bbox_hflip [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox_aspect_ratio -> detectron__core__test__im_detect_bbox [style="solid", color="#000000"];
+        detectron__core__test__im_detect_bbox_aspect_ratio -> detectron__core__test__im_detect_bbox_hflip [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask -> detectron__core__test___add_multilevel_rois_for_test [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask -> detectron__core__test___get_rois_blob [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_aug -> detectron__core__test__im_detect_mask_hflip [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_aug -> detectron__core__test__im_conv_body_only [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_aug -> detectron__core__test__im_detect_mask_scale [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_aug -> detectron__core__test__im_detect_mask_aspect_ratio [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_aug -> detectron__core__test__im_detect_mask_aug__logit [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_aug -> detectron__core__test__im_detect_mask [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_hflip -> detectron__core__test__im_conv_body_only [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_hflip -> detectron__core__test__im_detect_mask [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_scale -> detectron__core__test__im_detect_mask_hflip [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_scale -> detectron__core__test__im_conv_body_only [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_scale -> detectron__core__test__im_detect_mask [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_aspect_ratio -> detectron__core__test__im_detect_mask_hflip [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_aspect_ratio -> detectron__core__test__im_conv_body_only [style="solid", color="#000000"];
+        detectron__core__test__im_detect_mask_aspect_ratio -> detectron__core__test__im_detect_mask [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints -> detectron__core__test___add_multilevel_rois_for_test [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints -> detectron__core__test___get_rois_blob [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aug -> detectron__core__test__im_detect_keypoints_hflip [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aug -> detectron__core__test__im_detect_keypoints_aug__add_heatmaps_t [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aug -> detectron__core__test__im_detect_keypoints_aug__heur_f [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aug -> detectron__core__test__im_conv_body_only [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aug -> detectron__core__test__im_detect_keypoints_scale [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aug -> detectron__core__test__im_detect_keypoints_aspect_ratio [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aug -> detectron__core__test__combine_heatmaps_size_dep [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aug -> detectron__core__test__im_detect_keypoints [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_hflip -> detectron__core__test__im_conv_body_only [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_hflip -> detectron__core__test__im_detect_keypoints [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_scale -> detectron__core__test__im_detect_keypoints_hflip [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_scale -> detectron__core__test__im_conv_body_only [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_scale -> detectron__core__test__im_detect_keypoints [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aspect_ratio -> detectron__core__test__im_detect_keypoints_hflip [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aspect_ratio -> detectron__core__test__im_conv_body_only [style="solid", color="#000000"];
+        detectron__core__test__im_detect_keypoints_aspect_ratio -> detectron__core__test__im_detect_keypoints [style="solid", color="#000000"];
+        detectron__core__test___get_rois_blob -> detectron__core__test___project_im_rois [style="solid", color="#000000"];
+        detectron__core__test___get_blobs -> detectron__core__test___get_rois_blob [style="solid", color="#000000"];
+        detectron__core__test_retinanet -> detectron__core__config [style="solid", color="#000000"];
+        detectron__core__test_retinanet__im_detect_bbox -> detectron__core__test_retinanet___create_cell_anchors [style="solid", color="#000000"];
+    }

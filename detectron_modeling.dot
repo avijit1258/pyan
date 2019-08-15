@@ -1,0 +1,907 @@
+digraph G {
+    graph [rankdir=TB, clusterrank="local"];
+    subgraph cluster_G {
+
+        graph [style="filled,rounded",fillcolor="#80808018", label=""];
+        detectron__modeling__FPN [label="detectron.modeling.FPN", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="0"];
+        detectron__modeling__ResNet [label="detectron.modeling.ResNet", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="1"];
+        detectron__modeling__VGG16 [label="detectron.modeling.VGG16", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="2"];
+        detectron__modeling__VGG_CNN_M_1024 [label="detectron.modeling.VGG_CNN_M_1024", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="3"];
+        detectron__modeling__detector [label="detectron.modeling.detector", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="4"];
+        detectron__modeling__fast_rcnn_heads [label="detectron.modeling.fast_rcnn_heads", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="5"];
+        detectron__modeling__generate_anchors [label="detectron.modeling.generate_anchors", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="6"];
+        detectron__modeling__keypoint_rcnn_heads [label="detectron.modeling.keypoint_rcnn_heads", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="7"];
+        detectron__modeling__mask_rcnn_heads [label="detectron.modeling.mask_rcnn_heads", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="8"];
+        detectron__modeling__model_builder [label="detectron.modeling.model_builder", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="9"];
+        detectron__modeling__name_compat [label="detectron.modeling.name_compat", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="10"];
+        detectron__modeling__optimizer [label="detectron.modeling.optimizer", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="11"];
+        detectron__modeling__retinanet_heads [label="detectron.modeling.retinanet_heads", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="12"];
+        detectron__modeling__rfcn_heads [label="detectron.modeling.rfcn_heads", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="13"];
+        detectron__modeling__rpn_heads [label="detectron.modeling.rpn_heads", style="filled", fillcolor="#ffffffb2", fontcolor="#000000", group="14"];
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_fpn [label="add_fpn\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:117)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_fpn_ResNet101_conv5_P2only_body [label="add_fpn_ResNet101_conv5_P2only_body\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:67)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_fpn_ResNet101_conv5_body [label="add_fpn_ResNet101_conv5_body\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:61)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_fpn_ResNet152_conv5_P2only_body [label="add_fpn_ResNet152_conv5_P2only_body\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:82)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_fpn_ResNet152_conv5_body [label="add_fpn_ResNet152_conv5_body\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:76)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_fpn_ResNet50_conv5_P2only_body [label="add_fpn_ResNet50_conv5_P2only_body\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:52)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_fpn_ResNet50_conv5_body [label="add_fpn_ResNet50_conv5_body\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:46)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_fpn_onto_conv_body [label="add_fpn_onto_conv_body\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:95)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_fpn_rpn_losses [label="add_fpn_rpn_losses\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:440)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_fpn_rpn_outputs [label="add_fpn_rpn_outputs\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:323)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_multilevel_roi_blobs [label="add_multilevel_roi_blobs\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:508)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__add_topdown_lateral_module [label="add_topdown_lateral_module\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:259)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__fpn_level_info_ResNet101_conv5 [label="fpn_level_info_ResNet101_conv5\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:555)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__fpn_level_info_ResNet152_conv5 [label="fpn_level_info_ResNet152_conv5\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:563)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__fpn_level_info_ResNet50_conv5 [label="fpn_level_info_ResNet50_conv5\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:547)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__get_min_max_levels [label="get_min_max_levels\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:301)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__FPN {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.FPN"];
+            detectron__modeling__FPN__map_rois_to_fpn_levels [label="map_rois_to_fpn_levels\n(/home/avijit/github/Detectron/detectron/modeling/FPN.py:493)", style="filled", fillcolor="#ff6565b2", fontcolor="#000000", group="0"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__add_ResNet101_conv4_body [label="add_ResNet101_conv4_body\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:43)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__add_ResNet101_conv5_body [label="add_ResNet101_conv5_body\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:47)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__add_ResNet152_conv5_body [label="add_ResNet152_conv5_body\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:51)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__add_ResNet50_conv4_body [label="add_ResNet50_conv4_body\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:35)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__add_ResNet50_conv5_body [label="add_ResNet50_conv5_body\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:39)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__add_ResNet_convX_body [label="add_ResNet_convX_body\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:91)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__add_ResNet_roi_conv5_head [label="add_ResNet_roi_conv5_head\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:129)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__add_residual_block [label="add_residual_block\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:153)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__add_stage [label="add_stage\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:60)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__basic_bn_shortcut [label="basic_bn_shortcut\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:203)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__basic_bn_stem [label="basic_bn_stem\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:246)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__basic_gn_shortcut [label="basic_gn_shortcut\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:223)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__basic_gn_stem [label="basic_gn_stem\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:259)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__bottleneck_gn_transformation [label="bottleneck_gn_transformation\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:336)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__ResNet {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.ResNet"];
+            detectron__modeling__ResNet__bottleneck_transformation [label="bottleneck_transformation\n(/home/avijit/github/Detectron/detectron/modeling/ResNet.py:276)", style="filled", fillcolor="#ff9f65b2", fontcolor="#000000", group="1"];
+        }
+        subgraph cluster_detectron__modeling__VGG16 {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.VGG16"];
+            detectron__modeling__VGG16__add_VGG16_conv5_body [label="add_VGG16_conv5_body\n(/home/avijit/github/Detectron/detectron/modeling/VGG16.py:26)", style="filled", fillcolor="#ffd865b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__modeling__VGG16 {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.VGG16"];
+            detectron__modeling__VGG16__add_VGG16_roi_fc_head [label="add_VGG16_roi_fc_head\n(/home/avijit/github/Detectron/detectron/modeling/VGG16.py:61)", style="filled", fillcolor="#ffd865b2", fontcolor="#000000", group="2"];
+        }
+        subgraph cluster_detectron__modeling__VGG_CNN_M_1024 {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.VGG_CNN_M_1024"];
+            detectron__modeling__VGG_CNN_M_1024__add_VGG_CNN_M_1024_conv5_body [label="add_VGG_CNN_M_1024_conv5_body\n(/home/avijit/github/Detectron/detectron/modeling/VGG_CNN_M_1024.py:26)", style="filled", fillcolor="#ebff65b2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__modeling__VGG_CNN_M_1024 {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.VGG_CNN_M_1024"];
+            detectron__modeling__VGG_CNN_M_1024__add_VGG_CNN_M_1024_roi_fc_head [label="add_VGG_CNN_M_1024_roi_fc_head\n(/home/avijit/github/Detectron/detectron/modeling/VGG_CNN_M_1024.py:47)", style="filled", fillcolor="#ebff65b2", fontcolor="#000000", group="3"];
+        }
+        subgraph cluster_detectron__modeling__detector {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector"];
+            detectron__modeling__detector__DetectionModelHelper [label="DetectionModelHelper\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:43)", style="filled", fillcolor="#b2ff65b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector"];
+            detectron__modeling__detector___get_lr_change_ratio [label="_get_lr_change_ratio\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:537)", style="filled", fillcolor="#b2ff65b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__AddLosses [label="AddLosses\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:524)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__AddMetrics [label="AddMetrics\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:531)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__AffineChannel [label="AffineChannel\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:81)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__BilinearInterpolation [label="BilinearInterpolation\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:338)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__CollectAndDistributeFpnRpnProposals [label="CollectAndDistributeFpnRpnProposals\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:172)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__ConvAffine [label="ConvAffine\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:384)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__ConvGN [label="ConvGN\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:414)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__ConvShared [label="ConvShared\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:303)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__DisableCudnn [label="DisableCudnn\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:456)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__DropoutIfTraining [label="DropoutIfTraining\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:228)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__GenerateProposalLabels [label="GenerateProposalLabels\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:140)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__GenerateProposals [label="GenerateProposals\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:107)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__GetLossScale [label="GetLossScale\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:517)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__RestorePreviousUseCudnn [label="RestorePreviousUseCudnn\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:460)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__RoIFeatureTransform [label="RoIFeatureTransform\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:238)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__TrainableParams [label="TrainableParams\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:68)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper__UpdateWorkspaceLr [label="UpdateWorkspaceLr\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:465)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper___CorrectMomentum [label="_CorrectMomentum\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:495)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper___SetNewLr [label="_SetNewLr\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:483)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper"];
+            detectron__modeling__detector__DetectionModelHelper____init__ [label="__init__\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:44)", style="filled", fillcolor="#99ff32b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__detector__DetectionModelHelper__BilinearInterpolation {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.detector.DetectionModelHelper.BilinearInterpolation"];
+            detectron__modeling__detector__DetectionModelHelper__BilinearInterpolation__upsample_filt [label="upsample_filt\n(/home/avijit/github/Detectron/detectron/modeling/detector.py:351)", style="filled", fillcolor="#7fff00b2", fontcolor="#000000", group="4"];
+        }
+        subgraph cluster_detectron__modeling__fast_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.fast_rcnn_heads"];
+            detectron__modeling__fast_rcnn_heads__add_fast_rcnn_losses [label="add_fast_rcnn_losses\n(/home/avijit/github/Detectron/detectron/modeling/fast_rcnn_heads.py:75)", style="filled", fillcolor="#79ff65b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__modeling__fast_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.fast_rcnn_heads"];
+            detectron__modeling__fast_rcnn_heads__add_fast_rcnn_outputs [label="add_fast_rcnn_outputs\n(/home/avijit/github/Detectron/detectron/modeling/fast_rcnn_heads.py:46)", style="filled", fillcolor="#79ff65b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__modeling__fast_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.fast_rcnn_heads"];
+            detectron__modeling__fast_rcnn_heads__add_roi_2mlp_head [label="add_roi_2mlp_head\n(/home/avijit/github/Detectron/detectron/modeling/fast_rcnn_heads.py:100)", style="filled", fillcolor="#79ff65b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__modeling__fast_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.fast_rcnn_heads"];
+            detectron__modeling__fast_rcnn_heads__add_roi_Xconv1fc_gn_head [label="add_roi_Xconv1fc_gn_head\n(/home/avijit/github/Detectron/detectron/modeling/fast_rcnn_heads.py:151)", style="filled", fillcolor="#79ff65b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__modeling__fast_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.fast_rcnn_heads"];
+            detectron__modeling__fast_rcnn_heads__add_roi_Xconv1fc_head [label="add_roi_Xconv1fc_head\n(/home/avijit/github/Detectron/detectron/modeling/fast_rcnn_heads.py:120)", style="filled", fillcolor="#79ff65b2", fontcolor="#000000", group="5"];
+        }
+        subgraph cluster_detectron__modeling__generate_anchors {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.generate_anchors"];
+            detectron__modeling__generate_anchors___generate_anchors [label="_generate_anchors\n(/home/avijit/github/Detectron/detectron/modeling/generate_anchors.py:68)", style="filled", fillcolor="#65ff8cb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__modeling__generate_anchors {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.generate_anchors"];
+            detectron__modeling__generate_anchors___mkanchors [label="_mkanchors\n(/home/avijit/github/Detectron/detectron/modeling/generate_anchors.py:89)", style="filled", fillcolor="#65ff8cb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__modeling__generate_anchors {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.generate_anchors"];
+            detectron__modeling__generate_anchors___ratio_enum [label="_ratio_enum\n(/home/avijit/github/Detectron/detectron/modeling/generate_anchors.py:106)", style="filled", fillcolor="#65ff8cb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__modeling__generate_anchors {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.generate_anchors"];
+            detectron__modeling__generate_anchors___scale_enum [label="_scale_enum\n(/home/avijit/github/Detectron/detectron/modeling/generate_anchors.py:117)", style="filled", fillcolor="#65ff8cb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__modeling__generate_anchors {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.generate_anchors"];
+            detectron__modeling__generate_anchors___whctrs [label="_whctrs\n(/home/avijit/github/Detectron/detectron/modeling/generate_anchors.py:80)", style="filled", fillcolor="#65ff8cb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__modeling__generate_anchors {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.generate_anchors"];
+            detectron__modeling__generate_anchors__generate_anchors [label="generate_anchors\n(/home/avijit/github/Detectron/detectron/modeling/generate_anchors.py:54)", style="filled", fillcolor="#65ff8cb2", fontcolor="#000000", group="6"];
+        }
+        subgraph cluster_detectron__modeling__keypoint_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.keypoint_rcnn_heads"];
+            detectron__modeling__keypoint_rcnn_heads__add_ResNet_roi_conv5_head_for_keypoints [label="add_ResNet_roi_conv5_head_for_keypoints\n(/home/avijit/github/Detectron/detectron/modeling/keypoint_rcnn_heads.py:156)", style="filled", fillcolor="#65ffc5b2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__modeling__keypoint_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.keypoint_rcnn_heads"];
+            detectron__modeling__keypoint_rcnn_heads__add_keypoint_losses [label="add_keypoint_losses\n(/home/avijit/github/Detectron/detectron/modeling/keypoint_rcnn_heads.py:110)", style="filled", fillcolor="#65ffc5b2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__modeling__keypoint_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.keypoint_rcnn_heads"];
+            detectron__modeling__keypoint_rcnn_heads__add_keypoint_outputs [label="add_keypoint_outputs\n(/home/avijit/github/Detectron/detectron/modeling/keypoint_rcnn_heads.py:46)", style="filled", fillcolor="#65ffc5b2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__modeling__keypoint_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.keypoint_rcnn_heads"];
+            detectron__modeling__keypoint_rcnn_heads__add_roi_pose_head_v1convX [label="add_roi_pose_head_v1convX\n(/home/avijit/github/Detectron/detectron/modeling/keypoint_rcnn_heads.py:187)", style="filled", fillcolor="#65ffc5b2", fontcolor="#000000", group="7"];
+        }
+        subgraph cluster_detectron__modeling__mask_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.mask_rcnn_heads"];
+            detectron__modeling__mask_rcnn_heads__add_ResNet_roi_conv5_head_for_masks [label="add_ResNet_roi_conv5_head_for_masks\n(/home/avijit/github/Detectron/detectron/modeling/mask_rcnn_heads.py:302)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__modeling__mask_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.mask_rcnn_heads"];
+            detectron__modeling__mask_rcnn_heads__add_mask_rcnn_losses [label="add_mask_rcnn_losses\n(/home/avijit/github/Detectron/detectron/modeling/mask_rcnn_heads.py:96)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__modeling__mask_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.mask_rcnn_heads"];
+            detectron__modeling__mask_rcnn_heads__add_mask_rcnn_outputs [label="add_mask_rcnn_outputs\n(/home/avijit/github/Detectron/detectron/modeling/mask_rcnn_heads.py:47)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__modeling__mask_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.mask_rcnn_heads"];
+            detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v0up [label="mask_rcnn_fcn_head_v0up\n(/home/avijit/github/Detectron/detectron/modeling/mask_rcnn_heads.py:275)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__modeling__mask_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.mask_rcnn_heads"];
+            detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v0upshare [label="mask_rcnn_fcn_head_v0upshare\n(/home/avijit/github/Detectron/detectron/modeling/mask_rcnn_heads.py:233)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__modeling__mask_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.mask_rcnn_heads"];
+            detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1up [label="mask_rcnn_fcn_head_v1up\n(/home/avijit/github/Detectron/detectron/modeling/mask_rcnn_heads.py:126)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__modeling__mask_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.mask_rcnn_heads"];
+            detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1up4convs [label="mask_rcnn_fcn_head_v1up4convs\n(/home/avijit/github/Detectron/detectron/modeling/mask_rcnn_heads.py:112)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__modeling__mask_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.mask_rcnn_heads"];
+            detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1up4convs_gn [label="mask_rcnn_fcn_head_v1up4convs_gn\n(/home/avijit/github/Detectron/detectron/modeling/mask_rcnn_heads.py:119)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__modeling__mask_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.mask_rcnn_heads"];
+            detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1upXconvs [label="mask_rcnn_fcn_head_v1upXconvs\n(/home/avijit/github/Detectron/detectron/modeling/mask_rcnn_heads.py:133)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__modeling__mask_rcnn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.mask_rcnn_heads"];
+            detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1upXconvs_gn [label="mask_rcnn_fcn_head_v1upXconvs_gn\n(/home/avijit/github/Detectron/detectron/modeling/mask_rcnn_heads.py:183)", style="filled", fillcolor="#65feffb2", fontcolor="#000000", group="8"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet101_fast_rcnn [label="ResNet101_fast_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:562)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet101_fast_rcnn_frozen_features [label="ResNet101_fast_rcnn_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:577)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet101_faster_rcnn [label="ResNet101_faster_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:654)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet101_rfcn [label="ResNet101_rfcn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:672)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet101_rpn_conv4 [label="ResNet101_rpn_conv4\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:605)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet101_rpn_conv4_frozen_features [label="ResNet101_rpn_conv4_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:629)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet50_fast_rcnn [label="ResNet50_fast_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:556)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet50_fast_rcnn_frozen_features [label="ResNet50_fast_rcnn_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:568)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet50_faster_rcnn [label="ResNet50_faster_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:647)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet50_rfcn [label="ResNet50_rfcn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:666)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet50_rpn_conv4 [label="ResNet50_rpn_conv4\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:601)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__ResNet50_rpn_conv4_frozen_features [label="ResNet50_rpn_conv4_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:623)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__VGG16_fast_rcnn [label="VGG16_fast_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:550)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__VGG16_faster_rcnn [label="VGG16_faster_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:640)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__VGG16_rpn [label="VGG16_rpn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:597)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__VGG16_rpn_frozen_features [label="VGG16_rpn_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:617)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__VGG_CNN_M_1024_fast_rcnn [label="VGG_CNN_M_1024_fast_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:543)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__VGG_CNN_M_1024_rpn [label="VGG_CNN_M_1024_rpn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:591)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__VGG_CNN_M_1024_rpn_frozen_features [label="VGG_CNN_M_1024_rpn_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:609)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder___add_fast_rcnn_head [label="_add_fast_rcnn_head\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:249)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder___add_roi_keypoint_head [label="_add_roi_keypoint_head\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:294)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder___add_roi_mask_head [label="_add_roi_mask_head\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:264)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder___narrow_to_fpn_roi_levels [label="_narrow_to_fpn_roi_levels\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:233)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__add_inference_inputs [label="add_inference_inputs\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:406)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__add_training_inputs [label="add_training_inputs\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:368)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__build_generic_detection_model [label="build_generic_detection_model\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:155)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__build_generic_retinanet_model [label="build_generic_retinanet_model\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:341)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__build_generic_rfcn_model [label="build_generic_rfcn_model\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:324)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__create [label="create\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:107)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__fast_rcnn [label="fast_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:439)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__fast_rcnn_frozen_features [label="fast_rcnn_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:492)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__faster_rcnn [label="faster_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:484)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__fpn_rpn [label="fpn_rpn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:476)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__fpn_rpn_frozen_features [label="fpn_rpn_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:509)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__generalized_rcnn [label="generalized_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:74)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__get_func [label="get_func\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:127)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__keypoint_rcnn [label="keypoint_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:452)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__keypoint_rcnn_frozen_features [label="keypoint_rcnn_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:527)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__mask_and_keypoint_rcnn [label="mask_and_keypoint_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:460)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__mask_rcnn [label="mask_rcnn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:444)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__mask_rcnn_frozen_features [label="mask_rcnn_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:516)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__retinanet [label="retinanet\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:98)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__rfcn [label="rfcn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:93)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__rpn [label="rpn\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:468)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder"];
+            detectron__modeling__model_builder__rpn_frozen_features [label="rpn_frozen_features\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:502)", style="filled", fillcolor="#65c5ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder__add_inference_inputs {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder.add_inference_inputs"];
+            detectron__modeling__model_builder__add_inference_inputs__create_input_blobs_for_net [label="create_input_blobs_for_net\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:409)", style="filled", fillcolor="#32b2ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder__build_generic_detection_model {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder.build_generic_detection_model"];
+            detectron__modeling__model_builder__build_generic_detection_model___single_gpu_build_func [label="_single_gpu_build_func\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:163)", style="filled", fillcolor="#32b2ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder__build_generic_retinanet_model {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder.build_generic_retinanet_model"];
+            detectron__modeling__model_builder__build_generic_retinanet_model___single_gpu_build_func [label="_single_gpu_build_func\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:345)", style="filled", fillcolor="#32b2ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__model_builder__build_generic_rfcn_model {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.model_builder.build_generic_rfcn_model"];
+            detectron__modeling__model_builder__build_generic_rfcn_model___single_gpu_build_func [label="_single_gpu_build_func\n(/home/avijit/github/Detectron/detectron/modeling/model_builder.py:326)", style="filled", fillcolor="#32b2ffb2", fontcolor="#000000", group="9"];
+        }
+        subgraph cluster_detectron__modeling__name_compat {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.name_compat"];
+            detectron__modeling__name_compat__get_new_name [label="get_new_name\n(/home/avijit/github/Detectron/detectron/modeling/name_compat.py:59)", style="filled", fillcolor="#658cffb2", fontcolor="#000000", group="10"];
+        }
+        subgraph cluster_detectron__modeling__optimizer {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.optimizer"];
+            detectron__modeling__optimizer___add_allreduce_graphX [label="_add_allreduce_graph\n(/home/avijit/github/Detectron/detectron/modeling/optimizer.py:67)", style="filled", fillcolor="#7965ffb2", fontcolor="#000000", group="11"];
+        }
+        subgraph cluster_detectron__modeling__optimizer {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.optimizer"];
+            detectron__modeling__optimizer___build_forward_graphX [label="_build_forward_graph\n(/home/avijit/github/Detectron/detectron/modeling/optimizer.py:57)", style="filled", fillcolor="#7965ffb2", fontcolor="#000000", group="11"];
+        }
+        subgraph cluster_detectron__modeling__optimizer {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.optimizer"];
+            detectron__modeling__optimizer__add_single_gpu_param_update_ops [label="add_single_gpu_param_update_ops\n(/home/avijit/github/Detectron/detectron/modeling/optimizer.py:90)", style="filled", fillcolor="#7965ffb2", fontcolor="#000000", group="11"];
+        }
+        subgraph cluster_detectron__modeling__optimizer {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.optimizer"];
+            detectron__modeling__optimizer__build_data_parallel_model [label="build_data_parallel_model\n(/home/avijit/github/Detectron/detectron/modeling/optimizer.py:33)", style="filled", fillcolor="#7965ffb2", fontcolor="#000000", group="11"];
+        }
+        subgraph cluster_detectron__modeling__retinanet_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.retinanet_heads"];
+            detectron__modeling__retinanet_heads__add_fpn_retinanet_losses [label="add_fpn_retinanet_losses\n(/home/avijit/github/Detectron/detectron/modeling/retinanet_heads.py:248)", style="filled", fillcolor="#b265ffb2", fontcolor="#000000", group="12"];
+        }
+        subgraph cluster_detectron__modeling__retinanet_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.retinanet_heads"];
+            detectron__modeling__retinanet_heads__add_fpn_retinanet_outputs [label="add_fpn_retinanet_outputs\n(/home/avijit/github/Detectron/detectron/modeling/retinanet_heads.py:63)", style="filled", fillcolor="#b265ffb2", fontcolor="#000000", group="12"];
+        }
+        subgraph cluster_detectron__modeling__retinanet_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.retinanet_heads"];
+            detectron__modeling__retinanet_heads__get_retinanet_bias_init [label="get_retinanet_bias_init\n(/home/avijit/github/Detectron/detectron/modeling/retinanet_heads.py:29)", style="filled", fillcolor="#b265ffb2", fontcolor="#000000", group="12"];
+        }
+        subgraph cluster_detectron__modeling__rfcn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.rfcn_heads"];
+            detectron__modeling__rfcn_heads__add_rfcn_outputs [label="add_rfcn_outputs\n(/home/avijit/github/Detectron/detectron/modeling/rfcn_heads.py:30)", style="filled", fillcolor="#eb65ffb2", fontcolor="#000000", group="13"];
+        }
+        subgraph cluster_detectron__modeling__rpn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.rpn_heads"];
+            detectron__modeling__rpn_heads__add_generic_rpn_outputs [label="add_generic_rpn_outputs\n(/home/avijit/github/Detectron/detectron/modeling/rpn_heads.py:33)", style="filled", fillcolor="#ff65d8b2", fontcolor="#000000", group="14"];
+        }
+        subgraph cluster_detectron__modeling__rpn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.rpn_heads"];
+            detectron__modeling__rpn_heads__add_single_scale_rpn_losses [label="add_single_scale_rpn_losses\n(/home/avijit/github/Detectron/detectron/modeling/rpn_heads.py:125)", style="filled", fillcolor="#ff65d8b2", fontcolor="#000000", group="14"];
+        }
+        subgraph cluster_detectron__modeling__rpn_heads {
+
+            graph [style="filled,rounded",fillcolor="#80808018", label="detectron.modeling.rpn_heads"];
+            detectron__modeling__rpn_heads__add_single_scale_rpn_outputs [label="add_single_scale_rpn_outputs\n(/home/avijit/github/Detectron/detectron/modeling/rpn_heads.py:55)", style="filled", fillcolor="#ff65d8b2", fontcolor="#000000", group="14"];
+        }
+    }
+        detectron__modeling__detector__DetectionModelHelper__AffineChannel -> detectron__modeling__detector__DetectionModelHelper__AffineChannel [style="solid", color="#000000"];
+        detectron__modeling__detector__DetectionModelHelper__BilinearInterpolation -> detectron__modeling__detector__DetectionModelHelper__BilinearInterpolation__upsample_filt [style="solid", color="#000000"];
+        detectron__modeling__detector__DetectionModelHelper__ConvAffine -> detectron__modeling__detector__DetectionModelHelper__AffineChannel [style="solid", color="#000000"];
+        detectron__modeling__detector__DetectionModelHelper__UpdateWorkspaceLr -> detectron__modeling__detector__DetectionModelHelper___SetNewLr [style="solid", color="#000000"];
+        detectron__modeling__detector__DetectionModelHelper__UpdateWorkspaceLr -> detectron__modeling__detector___get_lr_change_ratio [style="solid", color="#000000"];
+        detectron__modeling__detector__DetectionModelHelper___SetNewLr -> detectron__modeling__detector___get_lr_change_ratio [style="solid", color="#000000"];
+        detectron__modeling__detector__DetectionModelHelper___SetNewLr -> detectron__modeling__detector__DetectionModelHelper___CorrectMomentum [style="solid", color="#000000"];
+        detectron__modeling__detector__DetectionModelHelper___CorrectMomentum -> detectron__modeling__detector__DetectionModelHelper__TrainableParams [style="solid", color="#000000"];
+        detectron__modeling__FPN -> detectron__modeling__generate_anchors [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet50_conv5_body -> detectron__modeling__FPN__fpn_level_info_ResNet50_conv5 [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet50_conv5_body -> detectron__modeling__ResNet__add_ResNet50_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet50_conv5_body -> detectron__modeling__FPN__add_fpn_onto_conv_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet50_conv5_P2only_body -> detectron__modeling__FPN__fpn_level_info_ResNet50_conv5 [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet50_conv5_P2only_body -> detectron__modeling__ResNet__add_ResNet50_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet50_conv5_P2only_body -> detectron__modeling__FPN__add_fpn_onto_conv_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet101_conv5_body -> detectron__modeling__ResNet__add_ResNet101_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet101_conv5_body -> detectron__modeling__FPN__add_fpn_onto_conv_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet101_conv5_body -> detectron__modeling__FPN__fpn_level_info_ResNet101_conv5 [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet101_conv5_P2only_body -> detectron__modeling__ResNet__add_ResNet101_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet101_conv5_P2only_body -> detectron__modeling__FPN__add_fpn_onto_conv_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet101_conv5_P2only_body -> detectron__modeling__FPN__fpn_level_info_ResNet101_conv5 [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet152_conv5_body -> detectron__modeling__FPN__add_fpn_onto_conv_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet152_conv5_body -> detectron__modeling__ResNet__add_ResNet152_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet152_conv5_body -> detectron__modeling__FPN__fpn_level_info_ResNet152_conv5 [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet152_conv5_P2only_body -> detectron__modeling__FPN__add_fpn_onto_conv_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet152_conv5_P2only_body -> detectron__modeling__ResNet__add_ResNet152_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_ResNet152_conv5_P2only_body -> detectron__modeling__FPN__fpn_level_info_ResNet152_conv5 [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_onto_conv_body -> detectron__modeling__FPN__add_fpn [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn -> detectron__modeling__FPN__add_topdown_lateral_module [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn -> detectron__modeling__FPN__get_min_max_levels [style="solid", color="#000000"];
+        detectron__modeling__FPN__add_fpn_rpn_outputs -> detectron__modeling__generate_anchors__generate_anchors [style="solid", color="#000000"];
+        detectron__modeling__generate_anchors__generate_anchors -> detectron__modeling__generate_anchors___generate_anchors [style="solid", color="#000000"];
+        detectron__modeling__generate_anchors___generate_anchors -> detectron__modeling__generate_anchors___ratio_enum [style="solid", color="#000000"];
+        detectron__modeling__generate_anchors___generate_anchors -> detectron__modeling__generate_anchors___scale_enum [style="solid", color="#000000"];
+        detectron__modeling__generate_anchors___ratio_enum -> detectron__modeling__generate_anchors___mkanchors [style="solid", color="#000000"];
+        detectron__modeling__generate_anchors___ratio_enum -> detectron__modeling__generate_anchors___whctrs [style="solid", color="#000000"];
+        detectron__modeling__generate_anchors___scale_enum -> detectron__modeling__generate_anchors___mkanchors [style="solid", color="#000000"];
+        detectron__modeling__generate_anchors___scale_enum -> detectron__modeling__generate_anchors___whctrs [style="solid", color="#000000"];
+        detectron__modeling__keypoint_rcnn_heads__add_ResNet_roi_conv5_head_for_keypoints -> detectron__modeling__ResNet__add_stage [style="solid", color="#000000"];
+        detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1up4convs -> detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1upXconvs [style="solid", color="#000000"];
+        detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1up4convs_gn -> detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1upXconvs_gn [style="solid", color="#000000"];
+        detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1up -> detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v1upXconvs [style="solid", color="#000000"];
+        detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v0upshare -> detectron__modeling__mask_rcnn_heads__add_ResNet_roi_conv5_head_for_masks [style="solid", color="#000000"];
+        detectron__modeling__mask_rcnn_heads__mask_rcnn_fcn_head_v0up -> detectron__modeling__mask_rcnn_heads__add_ResNet_roi_conv5_head_for_masks [style="solid", color="#000000"];
+        detectron__modeling__mask_rcnn_heads__add_ResNet_roi_conv5_head_for_masks -> detectron__modeling__ResNet__add_stage [style="solid", color="#000000"];
+        detectron__modeling__model_builder -> detectron__modeling__detector [style="solid", color="#000000"];
+        detectron__modeling__model_builder__generalized_rcnn -> detectron__modeling__model_builder__get_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__generalized_rcnn -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__rfcn -> detectron__modeling__model_builder__get_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__rfcn -> detectron__modeling__model_builder__build_generic_rfcn_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__retinanet -> detectron__modeling__model_builder__get_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__retinanet -> detectron__modeling__model_builder__build_generic_retinanet_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__create -> detectron__modeling__model_builder__get_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__create -> detectron__modeling__detector__DetectionModelHelper [style="solid", color="#000000"];
+        detectron__modeling__model_builder__create -> detectron__modeling__detector__DetectionModelHelper____init__ [style="solid", color="#000000"];
+        detectron__modeling__model_builder__get_func -> detectron__modeling__name_compat__get_new_name [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_detection_model___single_gpu_build_func -> detectron__modeling__model_builder___add_fast_rcnn_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_detection_model___single_gpu_build_func -> detectron__modeling__model_builder___add_roi_mask_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_detection_model___single_gpu_build_func -> detectron__modeling__model_builder___add_roi_keypoint_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_detection_model___single_gpu_build_func -> detectron__modeling__model_builder___narrow_to_fpn_roi_levels [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_detection_model___single_gpu_build_func -> detectron__modeling__rpn_heads__add_generic_rpn_outputs [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_detection_model -> detectron__modeling__model_builder__build_generic_detection_model___single_gpu_build_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_detection_model -> detectron__modeling__optimizer__build_data_parallel_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder___add_fast_rcnn_head -> detectron__modeling__fast_rcnn_heads__add_fast_rcnn_outputs [style="solid", color="#000000"];
+        detectron__modeling__model_builder___add_fast_rcnn_head -> detectron__modeling__fast_rcnn_heads__add_fast_rcnn_losses [style="solid", color="#000000"];
+        detectron__modeling__model_builder___add_roi_mask_head -> detectron__modeling__mask_rcnn_heads__add_mask_rcnn_losses [style="solid", color="#000000"];
+        detectron__modeling__model_builder___add_roi_mask_head -> detectron__modeling__mask_rcnn_heads__add_mask_rcnn_outputs [style="solid", color="#000000"];
+        detectron__modeling__model_builder___add_roi_keypoint_head -> detectron__modeling__keypoint_rcnn_heads__add_keypoint_outputs [style="solid", color="#000000"];
+        detectron__modeling__model_builder___add_roi_keypoint_head -> detectron__modeling__keypoint_rcnn_heads__add_keypoint_losses [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_rfcn_model___single_gpu_build_func -> detectron__modeling__rfcn_heads__add_rfcn_outputs [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_rfcn_model___single_gpu_build_func -> detectron__modeling__fast_rcnn_heads__add_fast_rcnn_losses [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_rfcn_model -> detectron__modeling__model_builder__build_generic_rfcn_model___single_gpu_build_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_rfcn_model -> detectron__modeling__optimizer__build_data_parallel_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_retinanet_model___single_gpu_build_func -> detectron__modeling__retinanet_heads__add_fpn_retinanet_losses [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_retinanet_model___single_gpu_build_func -> detectron__modeling__retinanet_heads__add_fpn_retinanet_outputs [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_retinanet_model -> detectron__modeling__model_builder__build_generic_retinanet_model___single_gpu_build_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__build_generic_retinanet_model -> detectron__modeling__optimizer__build_data_parallel_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__add_inference_inputs -> detectron__modeling__model_builder__add_inference_inputs__create_input_blobs_for_net [style="solid", color="#000000"];
+        detectron__modeling__model_builder__fast_rcnn -> detectron__modeling__model_builder__generalized_rcnn [style="solid", color="#000000"];
+        detectron__modeling__model_builder__mask_rcnn -> detectron__modeling__model_builder__generalized_rcnn [style="solid", color="#000000"];
+        detectron__modeling__model_builder__keypoint_rcnn -> detectron__modeling__model_builder__generalized_rcnn [style="solid", color="#000000"];
+        detectron__modeling__model_builder__mask_and_keypoint_rcnn -> detectron__modeling__model_builder__generalized_rcnn [style="solid", color="#000000"];
+        detectron__modeling__model_builder__rpn -> detectron__modeling__model_builder__generalized_rcnn [style="solid", color="#000000"];
+        detectron__modeling__model_builder__fpn_rpn -> detectron__modeling__model_builder__generalized_rcnn [style="solid", color="#000000"];
+        detectron__modeling__model_builder__faster_rcnn -> detectron__modeling__model_builder__generalized_rcnn [style="solid", color="#000000"];
+        detectron__modeling__model_builder__fast_rcnn_frozen_features -> detectron__modeling__model_builder__get_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__fast_rcnn_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__rpn_frozen_features -> detectron__modeling__model_builder__get_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__rpn_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__fpn_rpn_frozen_features -> detectron__modeling__model_builder__get_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__fpn_rpn_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__mask_rcnn_frozen_features -> detectron__modeling__model_builder__get_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__mask_rcnn_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__keypoint_rcnn_frozen_features -> detectron__modeling__model_builder__get_func [style="solid", color="#000000"];
+        detectron__modeling__model_builder__keypoint_rcnn_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG_CNN_M_1024_fast_rcnn -> detectron__modeling__VGG_CNN_M_1024__add_VGG_CNN_M_1024_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG_CNN_M_1024_fast_rcnn -> detectron__modeling__VGG_CNN_M_1024__add_VGG_CNN_M_1024_roi_fc_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG_CNN_M_1024_fast_rcnn -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG16_fast_rcnn -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG16_fast_rcnn -> detectron__modeling__VGG16__add_VGG16_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG16_fast_rcnn -> detectron__modeling__VGG16__add_VGG16_roi_fc_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_fast_rcnn -> detectron__modeling__ResNet__add_ResNet50_conv4_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_fast_rcnn -> detectron__modeling__ResNet__add_ResNet_roi_conv5_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_fast_rcnn -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_fast_rcnn -> detectron__modeling__ResNet__add_ResNet_roi_conv5_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_fast_rcnn -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_fast_rcnn -> detectron__modeling__ResNet__add_ResNet101_conv4_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_fast_rcnn_frozen_features -> detectron__modeling__ResNet__add_ResNet50_conv4_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_fast_rcnn_frozen_features -> detectron__modeling__ResNet__add_ResNet_roi_conv5_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_fast_rcnn_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_fast_rcnn_frozen_features -> detectron__modeling__ResNet__add_ResNet_roi_conv5_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_fast_rcnn_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_fast_rcnn_frozen_features -> detectron__modeling__ResNet__add_ResNet101_conv4_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG_CNN_M_1024_rpn -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG_CNN_M_1024_rpn -> detectron__modeling__VGG_CNN_M_1024__add_VGG_CNN_M_1024_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG16_rpn -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG16_rpn -> detectron__modeling__VGG16__add_VGG16_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_rpn_conv4 -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_rpn_conv4 -> detectron__modeling__ResNet__add_ResNet50_conv4_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_rpn_conv4 -> detectron__modeling__ResNet__add_ResNet101_conv4_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_rpn_conv4 -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG_CNN_M_1024_rpn_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG_CNN_M_1024_rpn_frozen_features -> detectron__modeling__VGG_CNN_M_1024__add_VGG_CNN_M_1024_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG16_rpn_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG16_rpn_frozen_features -> detectron__modeling__VGG16__add_VGG16_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_rpn_conv4_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_rpn_conv4_frozen_features -> detectron__modeling__ResNet__add_ResNet50_conv4_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_rpn_conv4_frozen_features -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_rpn_conv4_frozen_features -> detectron__modeling__ResNet__add_ResNet101_conv4_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG16_faster_rcnn -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG16_faster_rcnn -> detectron__modeling__VGG16__add_VGG16_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__VGG16_faster_rcnn -> detectron__modeling__VGG16__add_VGG16_roi_fc_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_faster_rcnn -> detectron__modeling__ResNet__add_ResNet50_conv4_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_faster_rcnn -> detectron__modeling__ResNet__add_ResNet_roi_conv5_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_faster_rcnn -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_faster_rcnn -> detectron__modeling__ResNet__add_ResNet_roi_conv5_head [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_faster_rcnn -> detectron__modeling__model_builder__build_generic_detection_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_faster_rcnn -> detectron__modeling__ResNet__add_ResNet101_conv4_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_rfcn -> detectron__modeling__ResNet__add_ResNet50_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet50_rfcn -> detectron__modeling__model_builder__build_generic_rfcn_model [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_rfcn -> detectron__modeling__ResNet__add_ResNet101_conv5_body [style="solid", color="#000000"];
+        detectron__modeling__model_builder__ResNet101_rfcn -> detectron__modeling__model_builder__build_generic_rfcn_model [style="solid", color="#000000"];
+        detectron__modeling__optimizer__build_data_parallel_model -> detectron__modeling__optimizer___build_forward_graphX [style="solid", color="#000000"];
+        detectron__modeling__optimizer__build_data_parallel_model -> detectron__modeling__optimizer___add_allreduce_graphX [style="solid", color="#000000"];
+        detectron__modeling__optimizer__build_data_parallel_model -> detectron__modeling__optimizer__add_single_gpu_param_update_ops [style="solid", color="#000000"];
+        detectron__modeling__ResNet__add_ResNet50_conv4_body -> detectron__modeling__ResNet__add_ResNet_convX_body [style="solid", color="#000000"];
+        detectron__modeling__ResNet__add_ResNet50_conv5_body -> detectron__modeling__ResNet__add_ResNet_convX_body [style="solid", color="#000000"];
+        detectron__modeling__ResNet__add_ResNet101_conv4_body -> detectron__modeling__ResNet__add_ResNet_convX_body [style="solid", color="#000000"];
+        detectron__modeling__ResNet__add_ResNet101_conv5_body -> detectron__modeling__ResNet__add_ResNet_convX_body [style="solid", color="#000000"];
+        detectron__modeling__ResNet__add_ResNet152_conv5_body -> detectron__modeling__ResNet__add_ResNet_convX_body [style="solid", color="#000000"];
+        detectron__modeling__ResNet__add_stage -> detectron__modeling__ResNet__add_residual_block [style="solid", color="#000000"];
+        detectron__modeling__ResNet__add_ResNet_convX_body -> detectron__modeling__ResNet__add_stage [style="solid", color="#000000"];
+        detectron__modeling__ResNet__add_ResNet_roi_conv5_head -> detectron__modeling__ResNet__add_stage [style="solid", color="#000000"];
+        detectron__modeling__retinanet_heads__add_fpn_retinanet_outputs -> detectron__modeling__retinanet_heads__get_retinanet_bias_init [style="solid", color="#000000"];
+        detectron__modeling__rpn_heads -> detectron__modeling__generate_anchors [style="solid", color="#000000"];
+        detectron__modeling__rpn_heads__add_generic_rpn_outputs -> detectron__modeling__FPN__add_fpn_rpn_outputs [style="solid", color="#000000"];
+        detectron__modeling__rpn_heads__add_generic_rpn_outputs -> detectron__modeling__rpn_heads__add_single_scale_rpn_outputs [style="solid", color="#000000"];
+        detectron__modeling__rpn_heads__add_generic_rpn_outputs -> detectron__modeling__rpn_heads__add_single_scale_rpn_losses [style="solid", color="#000000"];
+        detectron__modeling__rpn_heads__add_generic_rpn_outputs -> detectron__modeling__FPN__add_fpn_rpn_losses [style="solid", color="#000000"];
+        detectron__modeling__rpn_heads__add_single_scale_rpn_outputs -> detectron__modeling__generate_anchors__generate_anchors [style="solid", color="#000000"];
+    }
