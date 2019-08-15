@@ -472,7 +472,10 @@ class CallGraphVisitor(ast.NodeVisitor):
                     self.logger.info("New edge added for Use from %s to %s (target obj %s known but target attr %s not resolved; maybe fwd ref or unanalyzed import)" % (from_node, to_node, obj_node, node.attr))
 
                 # remove resolved wildcard from current site to <Node *.attr>
+<<<<<<< HEAD
             
+=======
+>>>>>>> 5f1737ca2a7605d338b4b818c79d132a7394f95e
                 self.remove_wild(from_node, obj_node, node.attr)
 
                 self.last_value = to_node
