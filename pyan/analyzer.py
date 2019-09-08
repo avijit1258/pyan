@@ -152,7 +152,7 @@ class CallGraphVisitor(ast.NodeVisitor):
         self.expand_unknowns()
         self.contract_nonexistents()
         self.cull_inherited()
-        self.collapse_inner()
+        # self.collapse_inner()
 
     ###########################################################################
     # visitor methods
@@ -471,11 +471,7 @@ class CallGraphVisitor(ast.NodeVisitor):
                 if self.add_uses_edge(from_node, to_node):
                     self.logger.info("New edge added for Use from %s to %s (target obj %s known but target attr %s not resolved; maybe fwd ref or unanalyzed import)" % (from_node, to_node, obj_node, node.attr))
 
-                # remove resolved wildcard from current site to <Node *.attr>
-<<<<<<< HEAD
-            
-=======
->>>>>>> 5f1737ca2a7605d338b4b818c79d132a7394f95e
+                # remove resolved wildcard from current site to <Node *.attr>    
                 self.remove_wild(from_node, obj_node, node.attr)
 
                 self.last_value = to_node
@@ -1326,7 +1322,7 @@ class CallGraphVisitor(ast.NodeVisitor):
 
         # Keep wildcard if the target is actually an unresolved argument
         # (see visit_FunctionDef())
-        print('From node:',from_node,' To node: ', to_node, ' Name: ', name)
+        # print('From node:',from_node,' To node: ', to_node, ' Name: ', name)
         if to_node.get_name().find("^^^argument^^^") != -1:
             return
 
