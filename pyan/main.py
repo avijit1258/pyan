@@ -12,10 +12,23 @@
 import logging
 from glob import glob
 from optparse import OptionParser  # TODO: migrate to argparse
+import os, sys
 
 from .analyzer import CallGraphVisitor
 from .visgraph import VisualGraph
 from .writers import TgfWriter, DotWriter, YedWriter
+
+
+def get_all_py_files(root):
+        all_py = []
+        for path, subdirs, files in os.walk(root):
+            for name in files:
+                if name.endswith('.py'):
+                    all_py.append(os.path.join(path, name))
+                    print(os.path.join(path, name))
+
+        return all_py
+
 
 def main():
     usage = """usage: %prog FILENAME... [--dot|--tgf|--yed]"""
@@ -77,10 +90,12 @@ def main():
                       help="annotate with module and source line number")
 
     options, args = parser.parse_args()
-    filenames = [fn2 for fn in args for fn2 in glob(fn, recursive=True)]
+    # print(args)
+    filenames = get_all_py_files(args[0])
+    # filenames = [fn2 for fn in args for fn2 in glob(fn, recursive=True)]
     # filenames = [fn2 for fn in args for fn2 in glob(fn)]
-    print('Hey there',args)
-    print(filenames)
+    print('Hey there', args)
+    # print(filenames)
     if len(args) == 0:
         parser.error('Need one or more filenames to process')
 
